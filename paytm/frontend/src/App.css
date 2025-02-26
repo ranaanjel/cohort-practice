@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme  {
+    --animate-label: label 100ms ease-in-out forwards;
+    --animate-wiggle: wiggle 1s ease-in-out infinite;  
+     
+}
+@keyframes wiggle {    
+            0%    {}
+           100% {  
+            transform: rotate(-3deg); 
+           }   
+           50% {     
+             transform: rotate(3deg);   
+             } 
+     }
+
+@keyframes label {
+        0% {
+            top:1rem;
+            font-size: 1.2rem;
+
+        }
+        100% {
+             top:-0.2rem;
+            font-size: 1rem;
+          
+        }
+}
